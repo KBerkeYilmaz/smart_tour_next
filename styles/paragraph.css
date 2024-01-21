@@ -1,0 +1,38 @@
+.p-font1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+.p-font2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.p-font3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+.p-font4 {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+
+.p-sm-font1 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.p-sm-font2 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.p-sm-font3 {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.p-sm-font4 {
+    font-weight: 500;
+    font-size: 10px;
+}
