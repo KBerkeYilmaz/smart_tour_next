@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
-const withNextIntl = require('next-intl/plugin')();
+const withNextIntl = require("next-intl/plugin")();
 
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: "/api/register", // Path used in your Next.js app
+        destination: "https://www.gokamind.com/MedusaTurApi/register" // External API endpoint
+        },
+    ];
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

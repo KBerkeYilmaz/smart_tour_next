@@ -1,41 +1,56 @@
 import Image from "next/image";
 import SelectInput from "@ui/SelectInput";
+import {useTranslations} from 'next-intl';
+
 
 const HeroForm = () => {
+
+  const t = useTranslations('index.hero');
+
   return (
     <div className="flex flex-col justify-center items-center -translate-y-44 gap-4">
-      <h1 className="text-center text-white font-semibold text-[1.5rem] tablet:text-[2rem] lg:text-[3.125rem] w-full h-[6.25rem] leading-[40px] lg:leading-[50px] max-w-[833px] shrink">
-        Up to 25% off on first booking
-        <span className="text-primary"> Packages</span> through our site!
+      <h1 className="text-center text-white font-semibold text-[1.5rem] tablet:text-[2rem] lg:text-[3.125rem] w-full h-[6.25rem] leading-[40px] lg:leading-[50px] max-w-[833px] mb-10 shrink">
+        {t('title')}
+        <span className="text-primary"> {t('span')} </span> 
+        {t('title_2')}
       </h1>
       <ul className="flex justify-center items-center text-white gap-1 md:gap-[0.6rem] text-[10px] md:text-[15px] lg:text-[18px] w-screen">
         <li className="flex gap-[5px] md:gap-2.5">
-          <img
-            src="i.fa-dollar-sign.svg"
+          <Image
+            src="/i.fa-dollar-sign.svg"
             alt=""
+            width={25}
+            height={25}
+            
           />
-          <h3>Best Price Guaranteed</h3>
+          <h3>{t('sub-title-keywords.keyword_1')}</h3>
         </li>
         <li className="flex gap-[5px] md:gap-2.5">
-          <img
-            src="car.svg"
+          <Image
+            src="/car.svg"
             alt=""
+            width={25}
+            height={25}
           />
-          <h3>Home Pickups</h3>
+          <h3>{t('sub-title-keywords.keyword_2')}</h3>
         </li>
         <li className="flex gap-[5px] md:gap-2.5">
-          <img
-            src="laptop.svg"
+          <Image
+            src="/laptop.svg"
             alt=""
+            width={25}
+            height={25}
           />
-          <h3>Easy Bookings</h3>
+          <h3>{t('sub-title-keywords.keyword_3')}</h3>
         </li>
         <li className="flex gap-[5px] md:gap-2.5">
-          <img
-            src="headphone.svg"
+          <Image
+            src="/headphone.svg"
             alt=""
+            width={25}
+            height={25}
           />
-          <h3>24/7 Customer Care</h3>
+          <h3>{t('sub-title-keywords.keyword_4')}</h3>
         </li>
       </ul>
       <div className="md:p-8 lg:p-6 rounded-xl p-4 w-3/4 md:w-full xl:py-10 bg-white max-w-[833px] mx-auto flex flex-col justify-start items-center gap-4 shadow-2xl shadow-[#79747E]">

@@ -1,0 +1,47 @@
+{
+    "index": {
+        "hero": {
+            "title": "Sitemizden yapılan ilk rezervasyonda",
+            "span": "Pakette",
+            "title_2": "%25 indirim!",
+            "sub-title-keywords": {
+                "keyword_1": "En iyi fiyat garanti",
+                "keyword_2": "Konaklamanızdan Transfer",
+                "keyword_3": "Kolay Rezervasyon",
+                "keyword_4": "7/24 Müşteri Desteği"
+            },
+            "hero-form": {
+                "tour-label": "Introduzca su tour",
+                "destination-label": "Introduzca el destino",
+                "date-label": "Seleccione fecha"
+            }
+        },
+        "destination-grid": {
+            "title": "Nereyi keşfetmek istersiniz?",
+            "sub-title-keywords": {
+                "keyword_1": "Uçuşlar",
+                "keyword_2": "Cruiselar",
+                "keyword_3": "Paketler",
+                "keyword_4": "Turlar"
+            }
+        }
+    },
+    "navbar": {
+        "top-bar": {
+            "signUp": "Kayıt Ol",
+            "LogIn": "Giriş Yap"
+        },
+        "item-list": {
+            "item_1" : "",
+            "item_2" : "",
+            "item_3" : "",
+            "item_4" : "",
+            "item_5" : "",
+            "item_6" : "",
+            "item_7" : "",
+            "item_8" : "",
+            "item_9" : ""
+
+        }
+    }
+}

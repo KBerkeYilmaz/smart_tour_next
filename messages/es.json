@@ -1,0 +1,34 @@
+{
+  "index": {
+    "hero": {
+      "title": "¡Hasta el 25% de descuento en su primera reserva de nuestros",
+      "span": "paquetes",
+      "title_2": "a través de nuestra web ¡",
+      "sub-title-keywords": {
+        "keyword_1": "Mejor precio garantizado",
+        "keyword_2": "Servicio de recogida en su casa/ hotel",
+        "keyword_3": "Reserve fácilmente",
+        "keyword_4": "24/7 Servicio de Atención al cliente"
+      },
+      "hero-form": {
+        "tour-label": "Introduzca su tour",
+        "destination-label": "Introduzca el destino",
+        "date-label": "Seleccione fecha"
+      }
+    },
+    "destination-grid": {
+      "title": "¿Qué lugares le gustaría descubrir?",
+      "sub-title-keywords": {
+        "keyword_1": "Reservar vuelos",
+        "keyword_2": "Reservar crucero ",
+        "keyword_3": "Reservar paquetes",
+        "keyword_4": "Reservar Tour"
+      }
+    },
+    "LandingContactForm" : {
+      "title":"Contact "
+      
+    }
+    
+  }
+}

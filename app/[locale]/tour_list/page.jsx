@@ -1,8 +1,8 @@
 import ListDrawer from "@ui/ListDrawer";
-import PackageListItem from "@app/tour_list/PackageListItem";
+import PackageListItem from "./PackageListItem";
 import ListOptions from "./ListOptions";
 import HeroTitle from "@components/HeroTitle";
-import PackageFilterItems from "@app/tour_list/PackageFilterItems";
+import PackageFilterItems from "./PackageFilterItems";
 import ButtonBlock from "@ui/ButtonBlock";
 
 const TourList = () => {

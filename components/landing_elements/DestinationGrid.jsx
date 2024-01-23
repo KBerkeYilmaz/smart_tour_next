@@ -1,6 +1,8 @@
 import "../../styles/heading.css";
+import { useTranslations } from "next-intl";
 
 const DestinationGrid = () => {
+  const t = useTranslations("index.destination-grid");
   return (
     <section
       className="category-filter pt-2 md:pt-[1.87rem] flex flex-col justify-start items-center gap-[2rem]"
@@ -8,7 +10,8 @@ const DestinationGrid = () => {
     >
       <div className="flex justify-center md:justify-start items-center w-full">
         <h2 className="heading2 text-center px-0.5 tablet:px-0 w-full">
-          Where Would You Like To Discover
+        {t('title')}
+
         </h2>
       </div>
       <div

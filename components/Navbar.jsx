@@ -1,6 +1,10 @@
 import Link from "next/link";
+import {useTranslations} from 'next-intl';
 
 const Navbar = () => {
+
+  const t = useTranslations('navbar');
+
   return (
     <nav className="flex flex-col w-screen max-w-screen justify-start items-center">
       <section className="w-screen bg-primary flex justify-between py-[0.625rem] px-[1.25rem]">
@@ -10,7 +14,7 @@ const Navbar = () => {
             role="button"
           >
             <img
-              src="facebook-f-logo.svg"
+              src="/facebook-f-logo.svg"
               alt="facebook-logo"
               className="nav-fb-logo"
             />
@@ -20,7 +24,7 @@ const Navbar = () => {
             role="button"
           >
             <img
-              src="twitter-logo.svg"
+              src="/twitter-logo.svg"
               alt="twitter-logo"
             />
           </div>
@@ -29,7 +33,7 @@ const Navbar = () => {
             role="button"
           >
             <img
-              src="instagram-logo.svg"
+              src="/instagram-logo.svg"
               alt="instagram-logo"
             />
           </div>
@@ -38,7 +42,7 @@ const Navbar = () => {
             role="button"
           >
             <img
-              src="linkedin-logo.svg"
+              src="/linkedin-logo.svg"
               alt="linkedin-logo"
             />
           </div>
@@ -48,13 +52,13 @@ const Navbar = () => {
             className="px-[0.563rem]"
             role="button"
           >
-            <a href="home">LOGIN</a>
+            <Link href="/sign_up">{t('top-bar.signUp')}</Link>
           </h5>
           <h5
             className="px-[0.563rem]"
             role="button"
           >
-            <a href="user_signUp.html">SIGNUP</a>
+            <Link href="/sign_up">{t('top-bar.LogIn')}</Link>
           </h5>
         </div>
       </section>
