@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="mt-[5.5rem]">
+    <footer>
       <section className="bg-[#200E3A] w-screen justify-start items-stretch desktop:px-[13.875rem] desktop:py-[5rem] desktop:flex hidden">
         <div className="flex flex-col gap-[19px] text-white desktop:w-1/4 px-[1rem]">
           <h5 className="font-poppins text-[1.5rem] font-semibold">About Us</h5>

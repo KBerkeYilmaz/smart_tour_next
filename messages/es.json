@@ -25,10 +25,25 @@
         "keyword_4": "Reservar Tour"
       }
     },
-    "LandingContactForm" : {
-      "title":"Contact "
-      
+    "LandingContactForm": {
+      "title": "Contact "
+    },
+    "navbar": {
+      "top-bar": {
+        "signUp": "Inscribirse",
+        "LogIn": "Acceso"
+      },
+      "item-list": {
+        "item_1": "",
+        "item_2": "",
+        "item_3": "",
+        "item_4": "",
+        "item_5": "",
+        "item_6": "",
+        "item_7": "",
+        "item_8": "",
+        "item_9": ""
+      }
     }
-    
   }
 }

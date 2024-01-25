@@ -285,7 +285,7 @@ const Navbar = () => {
               className="flex items-center gap-2 h-full w-full"
               role="button"
             >
-              <Link href="/tour_list" >Blog</Link>
+              <Link href="/tour_list#list-main-section" >Blog</Link>
             </div>
           </div>
           <div
@@ -310,6 +310,8 @@ const Navbar = () => {
               <a href="tour_list.html">Contacto</a>
             </div>
           </div>
+
+
         </div>
       </section>
     </nav>

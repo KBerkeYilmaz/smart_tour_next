@@ -1,9 +1,12 @@
 import SignupForm from "@components/forms/SignupForm";
 
-const SignUp = () => {
+
+const sign_up = () => {
   return (
-    <SignupForm />
-    );
+    <>
+      <SignupForm />
+    </>
+  );
 };
 
-export default SignUp;
+export default sign_up;

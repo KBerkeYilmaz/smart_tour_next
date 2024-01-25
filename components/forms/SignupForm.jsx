@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
 // async function fetchData() {
 //   try {
@@ -10,7 +10,6 @@ import React, { useState } from "react";
 //         'Content-Type': 'application/json',
 //         'Authorization': eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwiZmlyc3RfbmFtZSI6IkVyZW4gS2FcdTAxMWZhbiIsImxhc3RfbmFtZSI6IkF5ZFx1MDEzMW4iLCJlbWFpbCI6ImVyZW5rYWdhbmF5ZGluQGdtYWlsLmNvbSIsInJvbGVfaWQiOiIxIiwic3RhdHVzIjp0cnVlLCJBUElfVElNRSI6MTcwNTgxNDg0N30.uRkTjxUDiB0if-PiwVqunAbESdJcIUmmia2gZXkn_EQ,
 //         'Accept-Language': 'turkish,tr'
-
 
 //       },
 //       // If you need to send data in the POST request, add a body property here
@@ -28,45 +27,113 @@ import React, { useState } from "react";
 // }
 
 // fetchData();
-fetch('https://dummyjson.com/posts')
-.then(res => res.json())
-.then(console.log);
-            
+// fetch('https://esacambalkon.com/asdasd.php')
+// .then(res => res.json())
+// .then(console.log);
 
+// var myHeaders = new Headers();
+// myHeaders.append("Content-Type", "application/json");
+// myHeaders.append("Accept-Language", "turkish,tr");
 
-const SignupForm = () => {
+// // // myHeaders.append("Cookie", "ci_session=49779c9c6ce5853f0e2271a74fa97dc42fd87c27");
+
+// const raw = JSON.stringify({
+//   first_name: "Foo",
+//   last_name: "Bar",
+//   email: "test_frontend6@gmail.com",
+//   phone_number: "9055122096236s",
+//   password: "123456",
+//   role: "3",
+// });
+
+// const requestOptions = {
+//   method: "POST",
+//   headers: myHeaders,
+//   mode: "no-cors", // bu kısım
+//   body: raw,
+//   redirect: "follow",
+// };
+
+// fetch("https://www.gokamind.com/MedusaTurApi/register", requestOptions)
+//   .then((response) => response.text())
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log("error", error));
+
+const SignupForm = ({ rawData }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [password, setPassword] = useState("");
+
+  // OnChange handlers for each input
+  const handleFirstNameChange = (e) => setFirstName(e.target.value);
+  const handleLastNameChange = (e) => setLastName(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handlePhoneNumberChange = (e) => setPhoneNumber(e.target.value);
+  const handlePasswordChange = (e) => setPassword(e.target.value);
+
+  // Form submission
+
   async function onSubmit(event) {
     event.preventDefault();
-    setIsLoading(true);
-    setError(null);
+    // setIsLoading(true);
+    // setError(null);
 
-    try {
-      const formData = new FormData(event.currentTarget);
-      const response = await fetch(
-        "https://www.gokamind.com/MedusaTurApi/register",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Accept-Language", "turkish,tr");
 
-      if (!response.ok) {
-        throw new Error("Failed to submit the data. Please try again.");
-      }
+    // Setup headers and form data
+    // const raw = JSON.stringify({
+    //   first_name: firstName,
+    //   last_name: lastName,
+    //   email: email,
+    //   phone_number: phoneNumber,
+    //   password: password,
+    //   role: "3",
+    // });
+    // const raw = JSON.stringify({
+    //   first_name: "Foo",
+    //   last_name: "Barz",
+    //   email: "test_frontend6@gmail.com",
+    //   phone_number: "9055122096226",
+    //   password: "123456",
+    //   role: "3",
+    // });
 
-      // Handle response if necessary
-      const data = await response.json();
-      console.log(data)
-    } catch (error) {
-      // Capture the error message to display to the user
-      setError(error.message);
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
+    // console.log(raw);
+
+    // const requestOptions = {
+    //   method: "POST",
+    //   headers: myHeaders,
+    //   mode: "no-cors", // bu kısım
+    //   body: raw,
+    //   redirect: "follow",
+    // };
+
+    // console.log(requestOptions);
+
+    // fetch("https://www.gokamind.com/MedusaTurApi/register", requestOptions)
+    //   .then((response) => response.text())
+    //   .then((result) => console.log(result))
+    //   .catch((error) => console.log("error", error));
+
+    // const requestOptions = {
+    //   method: "POST",
+    //   headers: myHeaders,
+    //   mode: "no-cors", // bu kısım
+    //   body: raw,
+    //   redirect: "follow",
+    // };
+
+    // fetch("https://www.gokamind.com/MedusaTurApi/register", requestOptions)
+    //   .then((response) => response.text())
+    //   .then((result) => console.log(result))
+    //   .catch((error) => console.log("error", error));
   }
 
   return (
@@ -88,32 +155,40 @@ const SignupForm = () => {
                 <label htmlFor="first_name">First Name</label>
                 <input
                   id="first_name"
-                  type="text"
+                  onChange={handleFirstNameChange}
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
+                  value={firstName}
+                  type="text"
                 />
               </div>
               <div className="w-full">
                 <label htmlFor="last_name">Second Name</label>
                 <input
                   id="last_name"
-                  type="text"
+                  onChange={handleLastNameChange}
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
+                  value={lastName}
+                  type="text"
                 />
               </div>
               <div>
                 <label htmlFor="email">Email</label>
                 <input
                   id="email"
-                  type="text"
+                  onChange={handleEmailChange}
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
+                  value={email}
+                  type="text"
                 />
               </div>
               <div>
                 <label htmlFor="phone_number">Mobile</label>
                 <input
                   id="phone_number"
-                  type="text"
+                  onChange={handlePhoneNumberChange}
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
+                  value={phoneNumber}
+                  type="text"
                 />
               </div>
             </div>
@@ -122,8 +197,10 @@ const SignupForm = () => {
             <label htmlFor="password">Password</label>
             <input
               id="password"
-              type="text"
+              onChange={handlePasswordChange}
               className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
+              value={password}
+              type="password"
             />
           </div>
           <div className="flex justify-between items-center my-[0.62rem]">
