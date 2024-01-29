@@ -32,7 +32,8 @@ module.exports = {
               fe: "#3887BE",
               txtprimary: "#112211",
               bgAccent: "#F2F2F2",
-              buttonAccent:"##3887BE"
+              buttonAccent:"##3887BE",
+              blueAccent: "#0084FF"
             },
       borderRadius: {
         lg: "var(--radius)",

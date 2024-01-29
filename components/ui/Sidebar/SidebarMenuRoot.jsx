@@ -14,7 +14,6 @@ const SideBarMenuRoot = () => {
   
   const handleRoomData = (data) => {
     setRoomData(data);
-    console.log(data)
   };
 
   console.log(roomData);

@@ -1,4 +1,4 @@
-const SideBarMenuPromoCode = () => {
+const PricebarMenuPromoCode = () => {
   return (
     <div className="flex justify-start items-center">
       <input
@@ -16,4 +16,4 @@ const SideBarMenuPromoCode = () => {
   );
 };
 
-export default SideBarMenuPromoCode;
+export default PricebarMenuPromoCode;

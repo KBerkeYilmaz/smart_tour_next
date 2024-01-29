@@ -3,7 +3,7 @@ const Review = () => {
     <section id="package-review-accordeon flex flex-col justify-start w-full h-full gap-[30px] mt-4 desktop:mt-0 h-full">
       <div className="flex justify-between items-center w-full mt-4">
         <h1 className="font-bold">User Ratings & Reviews</h1>
-        <button className="px-2 text-[14px] text-white bg-primary desktop:px-4 desktop:py-3 font-semibold rounded-md">
+        <button className="px-2 text-[14px] text-white bg-primary desktop:px-4 desktop:py-3 font-semibold rounded-[4px]">
           Give Your Review
         </button>
       </div>

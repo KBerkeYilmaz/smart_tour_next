@@ -53,6 +53,7 @@ const SidebarMenuTravelerCount = () => {
       <Accordion
         className="bg-bgAccent"
         expanded={expanded}
+        disabled={totalAdults > 0 ? false : true}
         onChange={() => {
           setExpanded(!expanded);
         }}
@@ -70,14 +71,14 @@ const SidebarMenuTravelerCount = () => {
         <AccordionDetails className="bg-white">
           <div className="text-xs flex flex-col mb-4">
             <h5 className="my-3 text-sm font-semibold">Single Room</h5>
-            <div className="flex">
+            <div className="flex items-baseline justify-between">
               <div>
                 <h6>Select Amount of Travelers</h6>
                 <hr />
                 <span>{`x${roomData.singleAdult} Adult`}</span>
               </div>
 
-              <div>
+              <div className="flex flex-col items-center"> 
                 <label htmlFor="">Add Children</label>
                 <input
                   type="select"
@@ -88,14 +89,14 @@ const SidebarMenuTravelerCount = () => {
           </div>
           <div className="text-xs flex flex-col mb-4">
             <h5 className="my-3 text-sm font-semibold">Double Room</h5>
-            <div className="flex">
+            <div className="flex items-baseline justify-between">
               <div>
                 <h6>Select Amount of Travelers</h6>
                 <hr />
                 <span>{`x${roomData.doubleAdult} Adult`}</span>
               </div>
 
-              <div>
+              <div className="flex flex-col items-center"> 
                 <label htmlFor="">Add Children</label>
                 <input
                   type="select"
@@ -106,14 +107,14 @@ const SidebarMenuTravelerCount = () => {
           </div>
           <div className="text-xs flex flex-col mb-4">
             <h5 className="my-3 text-sm font-semibold">Triple Room</h5>
-            <div className="flex">
+            <div className="flex items-baseline justify-between">
               <div>
                 <h6>Select Amount of Travelers</h6>
                 <hr />
                 <span>{`x${roomData.tripleAdult} Adult`}</span>
               </div>
 
-              <div>
+              <div className="flex flex-col items-center"> 
                 <label htmlFor="">Add Children</label>
                 <input
                   type="select"

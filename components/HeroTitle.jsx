@@ -11,6 +11,7 @@ const HeroTitle = () => {
         backgroundSize: "100% auto",
       }}
     >
+        
       <HeroForm />
     </section>
   );

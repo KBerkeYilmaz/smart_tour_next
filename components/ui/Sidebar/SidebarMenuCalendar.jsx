@@ -1,7 +1,8 @@
 "use client";
+import "../../../node_modules/react-date-range/dist/styles.css"; 
+import "../../../node_modules/react-date-range/dist/theme/default.css"; 
+
 import { useMemo, useState } from "react";
-import "react-date-range/dist/styles.css"; // main style file
-import "react-date-range/dist/theme/default.css"; // theme css file
 import {
   DateRangePicker,
   Range,
@@ -10,7 +11,7 @@ import {
   DateRange,
 } from "react-date-range";
 
-function SidebarMenuCalendar( {value, disabledDates, onChange }) {
+const SidebarMenuCalendar = ({ value, disabledDates, onChange }) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const handleSelect = (date) => {
@@ -18,7 +19,11 @@ function SidebarMenuCalendar( {value, disabledDates, onChange }) {
     console.log(date); // native Date object
   };
 
-
+  const selectionRange = {
+    startDate: new Date(),
+    endDate: new Date(),
+    key: "selection",
+  };
 
   return (
     <div className="flex flex-col">
@@ -36,14 +41,14 @@ function SidebarMenuCalendar( {value, disabledDates, onChange }) {
       <DateRange
         onChange={handleSelect}
         direction="vertical"
-        rangeColors={"#52D3D8"}
+        rangeColors={["#f33e5b", "#3ecf8e", "#fed14c"]}
         date={new Date()}
         showDateDisplay={false}
         minDate={new Date()}
-        disabledDates={disabledDates}
+        // disabledDates={disabledDates}
       />
     </div>
   );
-}
+};
 
 export default SidebarMenuCalendar;

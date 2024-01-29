@@ -8,7 +8,7 @@ const OptionsBar = ({ selectedOption,onOptionChange }) => {
 
   return (
     <div
-      className="package-details-options px-3 flex justify-between items-center text-[0.7rem] text-[#112211] bg-inherit shadow-xl shadow-[#D9D9D9] border-b-2 font-medium border-gray-200 w-full font-poppins"
+      className="package-details-options px-3 flex justify-between items-center text-[0.7rem] text-[#112211] bg-inherit border-b-2 font-medium border-gray-200 w-full font-poppins"
       id="package-details-options"
     >
       <button

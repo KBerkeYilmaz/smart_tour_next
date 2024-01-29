@@ -56,7 +56,7 @@ const PackageListItem = () => {
           <span class="text-[12px]">Full Day, 8 Hours</span>
           <span class="text-[12px] pb-2">English</span>
           <button class="py-2 px-6 text-[10px] bg-primary text-white rounded-[5px]">
-            <a href="package_detail.html">Customize it!</a>
+            <a href="/package_detail">Customize it!</a>
           </button>
         </div>
       </div>

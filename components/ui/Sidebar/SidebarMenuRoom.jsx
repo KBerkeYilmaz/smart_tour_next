@@ -104,6 +104,7 @@ export default function SidebarMenuRoom({ onRoomData }) {
                 value={singleRoom}
                 onChange={(e) => setSingleRoom(Number(e.target.value))}
                 min={0}
+                max={18}
                 className="max-w-14 min-h-8 bg-bgAccent pl-2 rounded-lg"
               />
             </div>
@@ -120,6 +121,7 @@ export default function SidebarMenuRoom({ onRoomData }) {
                 value={doubleRoom}
                 onChange={(e) => setDoubleRoom(Number(e.target.value))}
                 min={0}
+                max={18}
                 className="max-w-14 min-h-8 bg-bgAccent pl-2 rounded-lg"
               />
             </div>
@@ -136,6 +138,7 @@ export default function SidebarMenuRoom({ onRoomData }) {
                 value={tripleRoom}
                 onChange={(e) => setTripleRoom(Number(e.target.value))}
                 min={0}
+                max={18}
                 className="max-w-14 min-h-8 bg-bgAccent pl-2 rounded-lg"
               />
             </div>

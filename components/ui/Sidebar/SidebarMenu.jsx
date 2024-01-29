@@ -4,6 +4,11 @@ import SidebarMenuTravelerCount from "./SidebarMenuTravelerCount";
 import SidebarMenuHeader from "./SidebarMenuHeader";
 import SideBarMenuPromoCode from "./SidebarMenuPromoCode";
 import SidebarMenuTotalPrice from "./SidebarMenuTotalPrice";
+import Link from "next/link";
+
+import "../../../node_modules/react-date-range/dist/styles.css"; 
+import "../../../node_modules/react-date-range/dist/theme/default.css"; 
+
 // import eachDayOfInterval from "date-fns/eachDayOfInterval";
 // import { eachDayOfInterval } from "date-fns/esm";
 
@@ -18,9 +23,8 @@ import SidebarMenuTotalPrice from "./SidebarMenuTotalPrice";
 import "./styles.css";
 
 const SideBarMenu = () => {
-
   // const [dateRange, setDateRange] = useState(initialDateRange)
-  
+
   // const disabledDates = useMemo(() => {
   //   let dates=[]
   //   reservations.forEach((reservation) => {
@@ -34,8 +38,6 @@ const SideBarMenu = () => {
 
   //   return dates;
   // }, [reservations])
-
-
 
   return (
     <section className="package-details-sidebar px-[3px] flex-col justify-start py-[3px] lg:flex tablet:items-center h-fit z-50 hidden max-w-[15.375rem]">
@@ -55,9 +57,9 @@ const SideBarMenu = () => {
           className="flex flex-col gap-6"
         >
           <SidebarMenuCalendar
-            // value={dateRange}
-            // disabledDates={disabledDates}
-            // onChange={(value) => onChangeDate(value.selection)}
+          // value={dateRange}
+          // disabledDates={disabledDates}
+          // onChange={(value) => onChangeDate(value.selection)}
           />
           <SidebarMenuRoom />
           <SidebarMenuTravelerCount />
@@ -68,7 +70,7 @@ const SideBarMenu = () => {
             <a href="booking_detail.html"> Customize it now! </a>
           </button>
 
-          <div className="w-full flex justify-between items-center px-6">
+          <div className="w-full flex justify-between items-center">
             <button>
               <img
                 src="public/forward-icon-solid.svg"
@@ -76,7 +78,7 @@ const SideBarMenu = () => {
               />
             </button>
             <button className="bg-primary border-2 border-primary flex justify-center items-center rounded-[4px] px-8 py-2 text-white font-bold">
-              <a href="booking_detail.html"> Book Now </a>
+              <Link href="/booking_detail"> Book Now </Link>
             </button>
           </div>
         </form>

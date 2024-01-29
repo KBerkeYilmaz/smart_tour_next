@@ -9,14 +9,16 @@
     "tour_default_price": 1300,
     "tour_start_date": "12.06.2020",
     "tour_end_date": "17.06.2020",
-    "tour_duration_integer": "5",
+    "tour_duration_integer": "4",
     "tour_duration_nights": "nights",
+    "price_per_adult": 1000,
+    "price_per_children": 200,
     "price_currency": "euro",
     "tour_program": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
     "tour_tags": [
-        "archology",
+        "archeology",
         "seaside",
-        "Antalya"
+        "antalya"
     ],
     "tour_specials": [
         "Hamam Ciberlitas",
@@ -27,5 +29,15 @@
         50,
         15,
         60
+    ],
+    "tour_included": [
+        "Ticket valid for 48 hours.",
+        "Access to the 5 existing lines.",
+        "dasdasdsad"
+    ],
+    "tour_not_included": [
+        "Bıdıdasdsadas",
+        "dasdsdadsad",
+        "tes3oh yes"
     ]
 }
