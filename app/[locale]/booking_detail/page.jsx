@@ -27,7 +27,7 @@ const booking_detail = () => {
     <main className="bg-[#F2F2F2] flex justify-center items-baseline w-screen py-16 relative">
       {/* <!-- DETAILS CONTAINER --> */}
 
-      <div className="details-container flex flex-col lg:w-7/12 justify-start py-[1.25rem] px-4 bg-white max-h-screen min-h-fit overflow-y-auto ">
+      <div className="details-container flex flex-col lg:w-7/12 justify-start py-[1.25rem] px-4 bg-white max-h-[90%] min-h-fit overflow-y-auto ">
         <TourInfoHeader />
 
         <TourInfoSub />

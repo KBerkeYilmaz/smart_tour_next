@@ -73,13 +73,13 @@ const SideBarMenu = () => {
           <div className="w-full flex justify-between items-center">
             <button>
               <img
-                src="public/forward-icon-solid.svg"
+                src="/forward-icon-solid.svg"
                 alt=""
               />
             </button>
-            <button className="bg-primary border-2 border-primary flex justify-center items-center rounded-[4px] px-8 py-2 text-white font-bold">
-              <Link href="/booking_detail"> Book Now </Link>
-            </button>
+            <Link href="/booking_detail" className="bg-primary border-2 border-primary flex justify-center items-center rounded-[4px] px-8 py-2 text-white font-bold">
+              Book Now 
+            </Link>
           </div>
         </form>
       </div>

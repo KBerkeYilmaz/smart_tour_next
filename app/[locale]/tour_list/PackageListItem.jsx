@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const PackageListItem = () => {
   return (
@@ -6,7 +7,10 @@ const PackageListItem = () => {
       id="detail-list-container"
       class="flex flex-col sm:flex-row justify-start w-full gap-2 h-full mx-12 z-index-10"
     >
-      <div id="details-list-image" className="w-full sm:w-[50%]">
+      <div
+        id="details-list-image"
+        className="w-full sm:w-[50%]"
+      >
         <Image
           src="/list-item-placeholder.png"
           alt="Description"
@@ -21,7 +25,9 @@ const PackageListItem = () => {
           class="pl-4 sm:pl-0 flex flex-col h-full pt-4 justify-start items-start w-2/5 gap-2"
           id="detail-list-info"
         >
-          <h2 class="font-bold desktop:text-[18px] mobile:text-sm ">Effotel By Sajai Jaipur</h2>
+          <h2 class="font-bold desktop:text-[18px] mobile:text-sm ">
+            Effotel By Sajai Jaipur
+          </h2>
           <div class="text-primary flex text-[12px]">
             <img
               src="public/Location.svg"
@@ -55,9 +61,12 @@ const PackageListItem = () => {
           <h2 class="text-[28px] font-bold">$140</h2>
           <span class="text-[12px]">Full Day, 8 Hours</span>
           <span class="text-[12px] pb-2">English</span>
-          <button class="py-2 px-6 text-[10px] bg-primary text-white rounded-[5px]">
-            <a href="/package_detail">Customize it!</a>
-          </button>
+          <Link
+            class="py-2 px-6 text-[10px] bg-primary text-white rounded-[5px]"
+            href="/package_detail"
+          >
+            Customize it!
+          </Link>
         </div>
       </div>
     </div>
