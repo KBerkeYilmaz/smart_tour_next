@@ -1,12 +1,14 @@
 import SignupForm from "@components/forms/SignupForm";
+import { unstable_setRequestLocale } from "next-intl/server";
 
+const Signup = ({ params: { locale } }) => {
+  unstable_setRequestLocale(locale);
 
-const sign_up = () => {
+  
+
   return (
-    <>
       <SignupForm />
-    </>
   );
 };
 
-export default sign_up;
+export default Signup;

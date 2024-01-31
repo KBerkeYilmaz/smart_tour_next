@@ -18,15 +18,15 @@ const Footer = () => {
               alt=""
             />
             <img
-              src="public/twitter-logo.svg"
+              src="/twitter-logo.svg"
               alt=""
             />
             <img
-              src="public/linkedin-logo.svg"
+              src="/linkedin-logo.svg"
               alt=""
             />
             <img
-              src="public/instagram-logo.svg"
+              src="/instagram-logo.svg"
               alt=""
             />
           </div>
@@ -119,22 +119,22 @@ const Footer = () => {
         </span>
         <div className="flex gap-4 justify-center items-center w-full">
           <img
-            src="public/facebook-f-logo.svg"
+            src="/facebook-f-logo.svg"
             alt=""
             className="border-2 border-white rounded-full px-[9px] py-[7px]"
           />
           <img
-            src="public/twitter-logo.svg"
+            src="/twitter-logo.svg"
             alt=""
             className="border-2 border-white rounded-full px-[9px] py-[7px]"
           />
           <img
-            src="public/linkedin-logo.svg"
+            src="/linkedin-logo.svg"
             alt=""
             className="border-2 border-white rounded-full px-[9px] py-[7px]"
           />
           <img
-            src="public/instagram-logo.svg"
+            src="/instagram-logo.svg"
             alt=""
             className="border-2 border-white rounded-full px-[9px] py-[7px]"
           />

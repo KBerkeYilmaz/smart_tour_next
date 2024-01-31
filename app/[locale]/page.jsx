@@ -4,6 +4,7 @@ import TourSlider from "@components/landing_elements/TourSlider";
 import LandingContactForm from "@components/forms/LandingContactForm";
 import Testimonial from "@components/landing_elements/Testimonial";
 import HeroTitle from "@components/HeroTitle";
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
   return (

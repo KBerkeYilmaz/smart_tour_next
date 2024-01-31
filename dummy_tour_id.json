@@ -1,43 +1,88 @@
-{
-    "tour_id": 1,
-    "tour_imgUrl": "/location.svg",
-    "tour_title": "TOURIST BUS - HOP ON HOP OFF ATHENS",
-    "tour_location": "Jibhi, Himhoadfaland Prades, India",
-    "tour_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ƒIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    "tour_review_count": 371,
-    "tour_review_tp": 4.2,
-    "tour_default_price": 1300,
-    "tour_start_date": "12.06.2020",
-    "tour_end_date": "17.06.2020",
-    "tour_duration_integer": "4",
-    "tour_duration_nights": "nights",
-    "price_per_adult": 1000,
-    "price_per_children": 200,
-    "price_currency": "euro",
-    "tour_program": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    "tour_tags": [
-        "archeology",
-        "seaside",
-        "antalya"
-    ],
-    "tour_specials": [
-        "Hamam Ciberlitas",
-        "Night cruise with dinner",
-        "SultanAhmad Show"
-    ],
-    "tour_specials_price": [
-        50,
-        15,
-        60
-    ],
-    "tour_included": [
-        "Ticket valid for 48 hours.",
-        "Access to the 5 existing lines.",
-        "dasdasdsad"
-    ],
-    "tour_not_included": [
-        "Bıdıdasdsadas",
-        "dasdsdadsad",
-        "tes3oh yes"
-    ]
-}
+[
+    {
+        "tour_id": 1,
+        "tour_imgUrl": "/location.svg",
+        "tour_title": "TOURIST BUS - HOP ON HOP OFF ATHENS",
+        "tour_location": "Jibhi, Himhoadfaland Prades, India",
+        "tour_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ƒIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "tour_review_count": 371,
+        "tour_review_tp": 4.2,
+        "tour_default_price": 1300,
+        "tour_start_date": "12.06.2020",
+        "tour_end_date": "17.06.2020",
+        "tour_duration_integer": "4",
+        "tour_duration_nights": "nights",
+        "price_per_adult": 1000,
+        "price_per_children": 200,
+        "price_currency": "euro",
+        "tour_program": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
+        "tour_tags": [
+            "archeology",
+            "seaside",
+            "antalya"
+        ],
+        "tour_specials": [
+            "Hamam Ciberlitas",
+            "Night cruise with dinner",
+            "SultanAhmad Show"
+        ],
+        "tour_specials_price": [
+            50,
+            15,
+            60
+        ],
+        "tour_included": [
+            "Ticket valid for 48 hours.",
+            "Access to the 5 existing lines.",
+            "dasdasdsad"
+        ],
+        "tour_not_included": [
+            "Bıdıdasdsadas",
+            "dasdsdadsad",
+            "tes3oh yes"
+        ]
+    },
+    {
+        "tour_id": 2,
+        "tour_imgUrl": "/location.svg",
+        "tour_title": "TOURIST BUS - HOP ON HOP OFF ATHENS",
+        "tour_location": "Jibhi, Himhoadfaland Prades, India",
+        "tour_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ƒIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "tour_review_count": 371,
+        "tour_review_tp": 4.2,
+        "tour_default_price": 1300,
+        "tour_start_date": "12.06.2020",
+        "tour_end_date": "17.06.2020",
+        "tour_duration_integer": "4",
+        "tour_duration_nights": "nights",
+        "price_per_adult": 1000,
+        "price_per_children": 200,
+        "price_currency": "euro",
+        "tour_program": "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
+        "tour_tags": [
+            "archeology",
+            "seaside",
+            "antalya"
+        ],
+        "tour_specials": [
+            "Hamam Ciberlitas",
+            "Night cruise with dinner",
+            "SultanAhmad Show"
+        ],
+        "tour_specials_price": [
+            50,
+            15,
+            60
+        ],
+        "tour_included": [
+            "Ticket valid for 48 hours.",
+            "Access to the 5 existing lines.",
+            "dasdasdsad"
+        ],
+        "tour_not_included": [
+            "Bıdıdasdsadas",
+            "dasdsdadsad",
+            "tes3oh yes"
+        ]
+    }
+]

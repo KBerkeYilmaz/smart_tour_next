@@ -2,6 +2,9 @@ import './styles.css'
 
 const ProgramDuration = () => {
   return (
+
+
+    //Öne çıkarılan özellikler, revize et// 
     <div className="w-full flex justify-center items-center gap-4 my-4 font-normal font-poppins text-[#4F4F4F] tracking-normal">
       <div className="flex justify-center items-center text-[15px] gap-1">
         <img

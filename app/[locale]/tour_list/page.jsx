@@ -3,11 +3,13 @@ import ListOptions from "./ListOptions";
 import HeroTitle from "@components/HeroTitle";
 import PackageFilterItems from "./PackageFilterItems";
 import ButtonBlock from "@ui/ButtonBlock";
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const TourList = () => {
+const TourList = ({params: { locale }}) => {
+  unstable_setRequestLocale(locale);
+
   return (
     <>
-      <HeroTitle />
       
       <section
         id="list-main-section"

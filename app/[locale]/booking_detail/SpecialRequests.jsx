@@ -1,6 +1,6 @@
 const SpecialRequest = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white my-6">
       <div>
         <h5 className="font-semibold py-4">Special Requests</h5>
       </div>

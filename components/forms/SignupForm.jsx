@@ -1,7 +1,7 @@
 "use client";
-
+import Link from "next/link";
 import { useState, useEffect } from "react";
-
+import Checkbox from "@mui/material/Checkbox";
 // async function fetchData() {
 //   try {
 //     const response = await fetch('https://www.gokamind.com/MedusaTurApi/all_tour', {
@@ -83,7 +83,7 @@ const SignupForm = ({ rawData }) => {
     // setIsLoading(true);
     // setError(null);
 
-    var myHeaders = new Headers();
+    const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("Accept-Language", "turkish,tr");
 
@@ -98,9 +98,9 @@ const SignupForm = ({ rawData }) => {
     // });
     // const raw = JSON.stringify({
     //   first_name: "Foo",
-    //   last_name: "Barz",
-    //   email: "test_frontend6@gmail.com",
-    //   phone_number: "9055122096226",
+    //   last_name: "Barzz",
+    //   email: "test_frontend8@gmail.com",
+    //   phone_number: "9055122096227",
     //   password: "123456",
     //   role: "3",
     // });
@@ -110,9 +110,9 @@ const SignupForm = ({ rawData }) => {
     // const requestOptions = {
     //   method: "POST",
     //   headers: myHeaders,
-    //   mode: "no-cors", // bu kısım
+    //   mode: "no-cors", 
     //   body: raw,
-    //   redirect: "follow",
+    //   redirect: "follow"
     // };
 
     // console.log(requestOptions);
@@ -159,6 +159,7 @@ const SignupForm = ({ rawData }) => {
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
                   value={firstName}
                   type="text"
+                  required
                 />
               </div>
               <div className="w-full">
@@ -169,6 +170,7 @@ const SignupForm = ({ rawData }) => {
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
                   value={lastName}
                   type="text"
+                  required
                 />
               </div>
               <div>
@@ -179,6 +181,7 @@ const SignupForm = ({ rawData }) => {
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
                   value={email}
                   type="text"
+                  required
                 />
               </div>
               <div>
@@ -189,6 +192,7 @@ const SignupForm = ({ rawData }) => {
                   className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
                   value={phoneNumber}
                   type="text"
+                  required
                 />
               </div>
             </div>
@@ -201,24 +205,28 @@ const SignupForm = ({ rawData }) => {
               className="w-full rounded-md bg-input border border-[#BEBEBE] h-[40px] p-[0.75rem]"
               value={password}
               type="password"
+              min={6}
+              required
             />
           </div>
-          <div className="flex justify-between items-center my-[0.62rem]">
-            <div className="flex gap-1 items-center">
-              <img
-                src="public/checkmark.svg"
-                alt=""
-              />
-              <p>
-                I agree to all the
-                <a
-                  href=""
-                  className="text-primary cursor-pointer"
-                >
-                  Terms and Privacy Policies.
-                </a>
-              </p>
-            </div>
+          <div className="flex justify-start items-center my-[0.62rem]">
+            <Checkbox
+              className="-translate-x-3"
+              sx={{
+                "&.Mui-checked": {
+                  color: "#52D3D8", // Color when checked
+                },
+              }}
+            />{" "}
+            <p className="-translate-x-3">
+              I agree to all the
+              <Link
+                href="/privacy_policy"
+                className="text-primary cursor-pointer"
+              >
+                Terms and Privacy Policies.
+              </Link>
+            </p>
           </div>
           <div className="flex gap-2 pb-2">
             Are you an agent?

@@ -19,7 +19,7 @@ const Testimonial = () => {
         </article>
         <div class="w-full h-fit flex gap-2 justify-start items-center">
           <div class="rounded-full bg-[#38419D] w-[3.125rem] h-[3.125rem] text-white flex justify-center items-center">
-            L
+            
           </div>
           <div class="flex flex-col justify-center items-center">
             <h6 class="font-semibold">Lauro Item 1</h6>
